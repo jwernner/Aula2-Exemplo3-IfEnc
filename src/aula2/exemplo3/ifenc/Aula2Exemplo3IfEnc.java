@@ -20,21 +20,18 @@ public class Aula2Exemplo3IfEnc {
         int numero;
         numero = Integer.parseInt(JOptionPane.showInputDialog("Insira um número: "));
 
-        If ( (numero % 10) == 0 ){
-        JOptionPane.showMessageDialog(null,"É múltiplo de 10 !");
-        } else{
-        if( (numero % 2) == 0 ){
-        JOptionPane.showMessageDialog(null,"É múltiplo de 2 !");
-        } else {
-        If ( (numero % 5) == 0 ){
-        JOptionPane.showMessageDialog(null,"É múltiplo de 5 !");
-        } else {
-        JOptionPane.showMessageDialog(null,"Não é múltiplo destes! ");
+        if ((numero % 10) == 0) {
+            JOptionPane.showMessageDialog(null, "É múltiplo de 10!");
+        } else {
+            if ((numero % 2) == 0) {
+                JOptionPane.showMessageDialog(null, "É múltiplo de 2!");
+            } else {
+                if ((numero % 5) == 0) {
+                    JOptionPane.showMessageDialog(null, "É múltiplo de 5!");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Não é múltiplo destes!");
+                }
+            }
         }
-        }
-        }
-
-        
     }
-    
 }
